@@ -1,0 +1,25 @@
+{
+  "name": "tjdavey.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website of Tristan Davey <tristan@tristandavey.com>",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "ekko-lightbox": "^5.1.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "vinyl-paths": "^2.1.0"
+  },
+  "scripts": {
+    "build": "gulp clean & gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjdavey/tjdavey.github.io.git"
+  },
+  "author": "Tristan Davey <tristan@tristandavey.com>",
+  "bugs": {
+    "url": "https://github.com/tjdavey/tjdavey.github.io/issues"
+  },
+  "homepage": "https://github.com/tjdavey/tjdavey.github.io#readme"
+}

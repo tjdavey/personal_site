@@ -1,0 +1,17 @@
+---
+date: 2014-01-02 02:38:18+00:00
+layout: custom-page
+link: http://tristandavey.com/blog/
+slug: blog
+title: Blog
+---
+<div class="light-block">
+	<div class="container">
+		{% for post in paginator.posts %}
+			{% include blog-post-summary.html post=post %}
+		{% endfor %}
+	</div>
+</div>
+<div class="extra-block">
+	{% include blog-pagination.html paginator=paginator %}
+</div>

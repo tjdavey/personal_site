@@ -1,0 +1,24 @@
+<header id="masthead" class="site-header" role="banner">
+  <div class="container">
+  <div class="branding">
+    <h1 class="site-title">
+      <a href="{{ site.baseurl }}" rel="home">
+        <span class="title title-first">Tristan</span><span class="title title-second">Davey</span>
+      </a>
+    </h1>
+  </div>
+
+  <nav id="site-navigation" class="main-navigation" role="navigation">
+    <ul id="menu-main-menu" class="menu">
+      <li id="menu-item-home" class="menu-item">
+        <a href="{{ site.baseurl }}{% link index.html %}">Home</a>
+      </li>
+      <li id="menu-item-about" class="menu-item">
+        <a href="{{ site.baseurl }}{% link about.html %}">About</a>
+      </li>
+      <li id="menu-item-blog" class="menu-item">
+        <a href="{{ site.baseurl }}{% link blog/index.html %}">Blog</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,22 @@
+
+
+<div class="light-block">
+	<div class="container">
+		{% for post in site.posts %}
+      {% if post.categories contains include.category %}
+			  {% include blog-post-summary.html post=post %}
+      {% endif %}
+		{% endfor %}
+	</div>
+</div>
+<div class="extra-block">
+  <div id="pagination" class="row container">
+    <div class="col-xs-6 pagination-filter">
+      Showing only <strong>{{include.category}}</strong> posts.
+    </div>
+    <div class="col-xs-6 pagination-all">
+      <a href="{{ site.baseurl }}{% link blog/index.html %}">View all posts</a>
+    </div>
+  </div>
+
+</div>

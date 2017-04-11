@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <div id="page" class="hfeed site">
+	    <div class="wrap">
+        {% include header.html %}
+        <div id="primary" class="site-content content-area {{ include.primary_class }}">
+          <div id="main" class="site-main {{ include.main_class }}" role="main">

@@ -1,0 +1,39 @@
+<article typeof="BlogPosting">
+  <header class="entry-header">
+    <h2 class="entry-title">
+      <a property="url" href="{{ include.post.url }}" rel="bookmark">
+        <span property="name">{{ include.post.title }}</span>
+      </a>
+    </h2>
+    <div class="entry-meta">
+      {{ include.post.date }}
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-sm-3 entry-image">
+      <a href="{{ include.post.url }}">
+        <img class="media-object" src="{{ include.post.featured-image }}" alt="{{ include.post.title }}">
+      </a>
+    </div>
+    <div class="col-sm-9 entry-summary">
+      {{ include.post.excerpt }}
+      <p>
+        <a href="{{ include.post.url }}">
+          Continue Reading...
+        </a>
+      </p>
+    </div>
+  </div>
+  <footer class="entry-meta">
+    <div class="share-links">
+      <a class="tw-share-button" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ include.post.url }}">
+        <span class="socialicon"></span>
+        Tweet
+      </a>
+      <div class="li-share-button">
+        <script type="IN/Share" data-url="{{ site.url }}{{ site.baseurl }}{{ include.post.url }}"></script>
+      </div>
+      <div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ include.post.url }}" data-type="button"></div>
+    </div>
+  </footer>
+</article>
