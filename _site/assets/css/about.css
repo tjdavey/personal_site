@@ -30,26 +30,6 @@ ul.about_nav li {
     border-radius: 3px;
 }
 
-.background-shirt-block {
-    position: absolute;
-    width: 100%;
-}
-
-.background-shirt-block:after {
-    content: "";
-    background-size: cover;
-    background-position: center center;
-    background-color: #ffffff;
-    background-image: url(../images/shirt-bg.jpg);
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
 .tristan-block {
     background-image: url(../images/tristan.png);
     background-size: cover;
