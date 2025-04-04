@@ -2,7 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ site.name }} - {{ page.title }}</title>
 
-<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
 {% for stylesheet in page.styles %}
   <link href="/assets/css/{{stylesheet}}" rel="stylesheet" type="text/css">
 {% endfor %}
+{% if page.styles == null %}
+  <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
+{% endif %}

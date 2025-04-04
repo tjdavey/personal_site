@@ -1,9 +1,8 @@
-name: Tristan Davey
-
+title: Tristan Davey
 author: Tristan Davey
 author_email: tristan@tristandavey.com
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-assets
 
