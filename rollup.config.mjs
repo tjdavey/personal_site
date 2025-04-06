@@ -67,6 +67,7 @@ const config = [
         targets: [
           { src: ['node_modules/@awesome.me/kit-ef683a2718/icons/webfonts/*'], dest: 'assets/webfonts' },
           { src: ['node_modules/@fontsource-variable/open-sans/files/open-sans-latin-standard-normal.woff2'], dest: 'assets/webfonts' },
+          { src: ['node_modules/@fontsource-variable/open-sans/files/open-sans-latin-standard-italic.woff2'], dest: 'assets/webfonts' },
         ]
       }),
     ]
