@@ -273,13 +273,7 @@ textarea {
 }
 
 html {
-  background: #013356 url('/assets/images/blue-bg.jpg') no-repeat center top fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.jpg', sizingMethod='scale')";
+  background-color: #013356;
 }
 
 html, body {
@@ -869,6 +863,16 @@ article footer.entry-meta .share-links a.tw-share-button:hover, #content article
 
 article footer.entry-meta .share-links a.tw-share-button .socialicon {
     color: #fff;
+}
+
+.canvas-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .entry-title {

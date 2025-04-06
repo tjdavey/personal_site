@@ -4,8 +4,12 @@
     {% include head.html %}
   </head>
   <body vocab="http://schema.org/" typeof="WebPage">
-    <div id="page" class="hfeed site">
+    <div id="page" class="hfeed site {% if page.dynamic_background == true %}page-dynamic{% endif %}">
 	    <div class="wrap">
+            PAGE {page}
+        {% if page.dynamic_background == true %}
+          <canvas id="particle-canvas" class="canvas-background"></canvas>
+        {% endif %}
         {% include header.html %}
         <div id="primary" class="site-content light-block">
           <div id="main" class="site-main container" role="main">

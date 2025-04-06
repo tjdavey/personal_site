@@ -1,6 +1,8 @@
 import postcss from 'rollup-plugin-postcss'
 import copy from 'rollup-plugin-copy'
+import terser from '@rollup/plugin-terser';
 import postcssImport from 'postcss-import'
+
 
 const config = [
   {
@@ -69,6 +71,14 @@ const config = [
       }),
     ]
   },
+  {
+    input: 'src/js/dynamic_background.js',
+    output: {
+      file: 'assets/js/dynamic_background.js',
+      format: 'es'
+    },
+    plugins: [terser()]
+  }
 ];
 
 export default config
