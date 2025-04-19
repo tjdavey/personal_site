@@ -1,0 +1,106 @@
+---
+author: Tristan Davey
+layout: custom-page
+slug: Projects
+title: Projects
+styles:
+- projects.css
+dynamic_background: true
+---
+    <div class="background-block">
+        <div class="row container">
+            <div class="col-sm-12">
+                <h1>Personal and Open Source Projects</h1>
+            </div>
+        </div>
+    </div>
+    <div class="light-block">
+        <div class="row container">
+            <div class="col-sm-6 col-sm-push-6">
+                <h2>Townsville.Today</h2>
+                <p class="project-description">
+                    Live maps and charts of Townsville's river conditions, local flood warnings and flood alerts.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://townsville.today" class="btn btn-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>
+                        &nbsp;Visit Townsville.Today
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6 text-center">
+                <img src="/assets/images/townsvilletoday.png" alt="Townsville.Today Website" class="project-img">
+            </div>
+        </div>
+    </div>
+    <div class="background-block">
+        <div class="row container">
+            <div class="col-sm-6">
+                <h2 class="text-right">Punch Card Archive</h2>
+                <p class="project-description text-right">
+                    My personal collection of punch cards, punched tape, other punched media, and its ephemera. The
+                    collection has been catalogued, organised and documented to preserve knowledge of these pieces of
+                    computing history for the future.
+                </p>
+                <div class="project-buttons text-right">
+                    <a href="https://punchcards.tristandavey.com" class="btn btn-link">
+                        <i class="fa fa-solid fa-arrow-up-right-from-square"></i>
+                        &nbsp;Visit Punch Card Archive
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 text-center">
+                <img src="/assets/images/punchcard.png" alt="Punch Card Archive Website" class="project-img">
+            </div>
+        </div>
+    </div>
+    <div class="light-block">
+        <div class="container">
+            <h2>Open Source Projects</h2>
+            <div class="grid grid-sm-2 grid-md-3 project-grid">
+                {% include project_block.html
+                title="GeoJSON Map Fit Mercator"
+                language="Typescript"
+                desc="A map-fitting algorithm for optimally fitting a set of GeoJSON data inside an in-browser map."
+                github_link="https://github.com/tjdavey/geojson-map-fit-mercator"
+                npm_link="https://www.npmjs.com/package/geojson-map-fit-mercator"
+                %}
+                {% include project_block.html
+                title="Joi-Tz"
+                language="JavaScript"
+                desc="The most widely used Internet Assigned Numbers Authority (IANA) timezone string validator for <a href=\"https://joi.dev/\">Joi</a>."
+                github_link="https://github.com/tjdavey/joi-tz"
+                npm_link="https://www.npmjs.com/package/joi-tz"
+                %}
+                {% include project_block.html
+                title="Joi-BCP47"
+                language="JavaScript"
+                desc="Internet Engineering Task Force (IETF) Best Current Practice (BCP) 47 Language-code validation for <a href=\"https://joi.dev/\">Joi</a>."
+                github_link="https://github.com/tjdavey/joi-bcp47"
+                npm_link="https://www.npmjs.com/package/joi-bcp47"
+                %}
+                {% include project_block.html
+                title="Easement.js"
+                language="JavaScript"
+                desc="Standalone library of common animation and transition easing functions."
+                github_link="https://github.com/tjdavey/easement.js"
+                npm_link="https://www.npmjs.com/package/easement.js"
+                %}
+                {% include project_block.html
+                title="ITU-T E.164 Country Code Lookup"
+                language="JavaScript"
+                desc="ISO Country Code lookup from an International Telephone Union (ITU) telephone number prefix."
+                github_link="https://github.com/tjdavey/itu-e164-country-codes"
+                npm_link="https://www.npmjs.com/package/itu-e164-country-codes"
+                %}
+                {% include project_block.html
+                title="Vistab"
+                language="Java"
+                github_link="https://github.com/tjdavey/VisTab"
+                desc="Protégé-OWL 3.4 Plugin which adds a Tab to allow users to export RDF data using format extensions and an ontology to describe the output format."
+                %}
+            </div>
+        </div>
+    </div>
+
+</div>

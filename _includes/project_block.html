@@ -1,0 +1,19 @@
+<div class="project-block">
+    <h3 class="project-heading">{{ include.title }}</h3>
+    <div class="project-info">
+        <div class="label label-{{ include.language | downcase }}">{{ include.language }}</div>
+    </div>
+    <p class="project-description">{{ include.desc }}</p>
+    <div class="project-buttons">
+        <a href="{{ include.github_link }}" class="btn btn-sm btn-github">
+            <i class="fa fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        {% if include.npm_link %}
+        <a href="{{ include.npm_link }}" class="btn btn-sm btn-npm">
+            <i class="fa fa-brands fa-npm"></i>
+            <span>NPM</span>
+        </a>
+        {% endif %}
+    </div>
+</div>

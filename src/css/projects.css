@@ -1,0 +1,64 @@
+@import "base.css";
+
+/* Project blocks */
+
+.project-grid {
+    gap: 3rem;
+}
+
+.project-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    flex-grow: 1;
+    margin: 30px 0 !important;
+}
+
+.project-img {
+    border-radius: 0.5rem;
+    width: 70%;
+    max-width: 300px;
+    margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.label-javascript {
+    background: #f7df1e;
+    color: #000000 !important;
+}
+
+.label-typescript {
+    background: #007acc;
+    color: #ffffff !important;
+}
+
+.label-java {
+    background: #f89820;
+    color: #000000 !important;
+}
+
+.btn-github {
+    background: #eee;
+    border-color: #dfdfdf;
+    color: #221e1b !important;
+}
+
+.btn-github:hover, .btn-github:active {
+    background: #dfdfdf;
+    color: #000000 !important;
+}
+
+.btn-npm {
+    background: #eee;
+    border-color: #dfdfdf;
+    color: #cb3837 !important;
+}
+
+.btn-npm:hover, .btn-npm:active {
+    background: #dfdfdf;
+    color: #c62828 !important;
+}
+
+

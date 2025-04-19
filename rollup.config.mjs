@@ -36,9 +36,9 @@ const config = [
     ]
   },
   {
-    input: 'src/css/base.css',
+    input: 'src/css/projects.css',
     output: {
-      file: 'assets/css/main.css',
+      file: 'assets/css/projects.css',
       format: 'es'
     },
     plugins: [
@@ -66,16 +66,15 @@ const config = [
       copy({
         targets: [
           { src: ['node_modules/@awesome.me/kit-ef683a2718/icons/webfonts/*'], dest: 'assets/webfonts' },
-          { src: ['node_modules/@fontsource-variable/open-sans/files/open-sans-latin-standard-normal.woff2'], dest: 'assets/webfonts' },
-          { src: ['node_modules/@fontsource-variable/open-sans/files/open-sans-latin-standard-italic.woff2'], dest: 'assets/webfonts' },
+          { src: ['node_modules/@fontsource-variable/open-sans/files/open-sans-latin-standard-*'], dest: 'assets/webfonts' },
         ]
       }),
     ]
   },
   {
-    input: 'src/js/dynamic_background.js',
+    input: 'src/js/base.js',
     output: {
-      file: 'assets/js/dynamic_background.js',
+      file: 'assets/js/base.js',
       format: 'es'
     },
     plugins: [terser()]

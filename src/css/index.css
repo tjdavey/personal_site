@@ -134,10 +134,10 @@ header#masthead {
   }
 
   .home-sub .title-sub h2 {
-    font-size: 15px;
+    font-size: 11px;
   }
 
-	.home-sub .title-sub:before, .home-sub .title-sub:after {
+  .home-sub .title-sub:before, .home-sub .title-sub:after {
    	top: 10px;
     z-index: -1;
     height: 30px;

@@ -1,25 +1,36 @@
 <header id="masthead" class="site-header">
-  <div class="container">
-    <div class="branding">
-      <h1 class="site-title">
-        <a href="{{ site.baseurl }}" rel="home">
-          <span class="title title-first">Tristan</span><span class="title title-second">Davey</span>
-        </a>
-      </h1>
-    </div>
+    <nav id="site-navigation" class="navbar main-navigation" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-regular fa-bars"></i>
+        </button>
+        <div class="branding">
+          <h1 class="site-title">
+            <a href="{{ site.baseurl }}" rel="home">
+              <span class="title title-first">Tristan</span><span class="title title-second">Davey</span>
+            </a>
+          </h1>
+        </div>
+      </div>
 
-    <nav id="site-navigation" class="main-navigation">
-      <ul id="menu-main-menu" class="menu">
-        <li id="menu-item-home" class="menu-item">
-          <a href="{{ site.baseurl }}{% link index.html %}">Home</a>
-        </li>
-        <li id="menu-item-about" class="menu-item">
-          <a href="{{ site.baseurl }}{% link about.html %}">About</a>
-        </li>
-        <li id="menu-item-blog" class="menu-item">
-          <a href="{{ site.baseurl }}{% link blog/index.html %}">Blog</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul id="menu-main-menu" class="navbar-nav">
+          <li id="menu-item-home" class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}{% link index.html %}">Home</a>
+          </li>
+          <li id="menu-item-about" class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}{% link about.html %}">About</a>
+          </li>
+          <li id="menu-item-projects" class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}{% link projects.html %}">Projects</a>
+          </li>
+          <li id="menu-item-blog" class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}{% link blog/index.html %}">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
